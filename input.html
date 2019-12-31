@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input</title>
+</head>
+<body>
+<form action="" >
+<!--
+    单行文本框
+    type:text
+    size:长度
+    maxlenth:最大输入字符数
+    -->
+    用户名：<input type="text" name="" placeholder="请输入用户名：" size="50"><br>
+
+    密码：<input type="password" name="password" placeholder=""><br>
+<!-- 单选框：type:radio
+   一组中选择一个，则组中每一个单选框名字必须一样
+   value:必须设置value,否则提交数据都是on
+   checked:缺省选中
+   -->
+    性别：<input type="radio" name="sex" value="1" checked>男
+        <input type="radio" name="sex" value="0">女<br>
+<!-- 复选框
+   type:checkbox
+   value:必须设置值，否则提交的值都是on后端很不好处理
+   checked:缺省值
+   -->
+    爱好：<input type="checkbox" name="hobby" value="0" checked>游戏
+         <input type="checkbox" name="hobby" value="1">美食
+         <input type="checkbox" name="hobby" value="2">旅游<br>
+<!--  文件提交 type=file  -->
+    头像：<input type="file" name="portrait"><br>
+<!--
+   隐藏按钮
+   一般用于提交重要的数据，但不需要用户填写
+   name  和  value 必须设置，
+   eg:用户的id
+   -->
+    <input type="hidden" name="id" value="1324身份正密码">
+<!-- type:submit(提交按钮)
+ value：按钮的标题
+ reset: 重置按钮，将表单中的信息，恢复到原始状态
+ -->
+    <input type="submit" value="登录">
+    <input type="reset" value="重置">
+</form>
+
+</body>
+</html>

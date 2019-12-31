@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格</title>
+</head>
+<body>
+<!--table（表格标签）属性：
+border:单元格线宽，默认是0
+cellspacing:单元格之间的间距
+cellpadding:单元格边线到内容之间的距离
+单元格的高度，由内容的高度决定，
+-->
+<table border="1" cellspacing="0" width="500" cellpadding="5">
+<!--caption:表格的标题，# 自动居中  -->
+    <caption><b>学生信息</b></caption>
+<!--tr(表格中新的一行)    -->
+    <tr>
+        <th>表头</th>
+        <td>学生姓名</td>
+        <td>性别</td>
+        <td>年龄</td>
+        <td>班级</td>
+    </tr>
+<!--tr属性 align:水平对齐，lift, center, right居左
+ valign:垂直对齐，top顶 center居中  bottom底部
+ -->
+    <tr height="50" align="center" valign="top">
+        <td>川普</td>
+<!-- td属性：colspan:从当前位置向右合并       -->
+        <td colspan="2">男</td>
+<!--        <td>60</td>-->
+<!--td属性:  rowspan:跨行合并，向下合并    -->
+        <td rowspan="3">美国1</td>
+    </tr>
+    <tr>
+        <td>小布什</td>
+        <td>男</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>老布什</td>
+        <td>男</td>
+        <td>50</td>
+    </tr>
+
+</table>
+
+</body>
+</html>
